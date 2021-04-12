@@ -23,10 +23,10 @@ docker build . --tag reverseclock
 ```
 
 Then create a container using:
+
 ```
 docker run --name reverseclock -t -p 5000:5000 reverseclock
 ```
-
 
 ### NPM
 
@@ -49,3 +49,7 @@ The build is minified and the filenames include hashes.
 #### `npm run build-serve`
 
 This command will build your app and start a server called `serve` which will serve your build files.
+
+#### `CI=true npm test`
+
+This command will test the .test file
